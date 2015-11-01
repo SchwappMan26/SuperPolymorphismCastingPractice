@@ -3,6 +3,11 @@ public class Child extends Parent
 	{
 		int num = 5;
 		
+		public Child()
+			{
+				
+			}
+		
 		public void displayChildA()
 			{
 			System.out.println("Child Method A");
@@ -13,7 +18,14 @@ public class Child extends Parent
 			System.out.println("Child Method B");
 			}
 		
-		public void printNumber_NumberClass()
+		public void printDisplayMessages()
+			{
+			displayParentA();
+			displayParentB();
+			displayChildA();
+			}
+		
+		public void printNumber_ChildClass()
 			{
 			System.out.println("The number is " + num);
 			}
